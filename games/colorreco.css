@@ -1,0 +1,186 @@
+       @import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Poetsen+One&display=swap');
+ 
+body {
+    font-family: "Poetsen One", sans-serif;
+    background-image: url('./gimg/c.jpg');
+  background-size: cover;      /* Scale the image to cover the entire container */
+  background-repeat: no-repeat; /* Prevent repeating */
+  background-position: center;  /* Center the image */
+  width: 100%;                 /* Full width of the container */
+  height: auto;                /* Height adjusts automatically */
+  min-height: 100vh;
+
+
+            text-align: center;
+}
+
+
+.container{
+    display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap:nowrap;
+            margin-top: 20px;
+}
+
+h1 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 20px;
+    color: #000000;
+    margin: 10px 0;
+}
+
+#color-box {
+    width: 170px;
+            height: 150px;
+            
+            background: #E7B190;
+            border-radius: 20px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px 21px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            left: 18px;
+            top: 5px;
+            
+}
+.clr-box {
+           display: flex;
+            width: 250px;
+            height: 200px;
+            padding: 10px;
+            background: #E7B190;
+            border-radius: 20px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            position: absolute;
+            top: 260px;
+            left: 280px;
+          justify-content: center; 
+          align-items: center;
+            
+            
+        }
+#options {
+    display:grid;
+    gap: 50px;
+    margin-top: 20px;
+    position: absolute;
+    top: 190px;
+    right: 300px;
+    
+}
+
+.option-button {
+    background: #E7B190;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    color: #000000;
+    border: 3px solid #E7B190;
+    padding: 24px 70px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-family: "Poetsen One", sans-serif;
+    
+}
+
+.option-button:hover {
+    background: #ffffff;
+    border-color: #000000;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px;
+    position: relative;
+    top: 180px;
+    border: #000000;
+}
+
+.correct {
+    color: green;
+}
+
+.wrong {
+    color: red;
+}
+
+
+       
+
+
+
+.speech-bubble{
+            position:relative;
+            background-color: #E7B190; 
+            border-radius: 15px;
+            padding: auto ;
+            font-size: 15px;
+            box-shadow: 5px 5px 5px;
+
+
+        }
+        .speech-bubble::after{
+            content: "" ;
+            display: block;
+            position: absolute;
+            height:0;
+            width: 0;
+            top:19%;
+            left: -7%;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+            border-right: 20px solid #E7B190;
+        }
+
+       
+
+        
+         .cloud {
+           
+  
+
+  width: 190px; 
+  height: 150px;
+            position: absolute;
+            margin-top: 20px;
+            left: 10px;
+            align-content: center;
+            background-image: url('gimg/a.png') ;
+            background-size: 190px ;
+            
+        }
+
+        .message-bubble {
+    position: relative;
+    background-color: #E7B190; /* Same color as your other elements */
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #000;
+    margin: 20px auto; /* Center the bubble */
+    width: fit-content; /* Adjust width based on content */
+    display: none; /* Initially hidden */
+}
+.message-bubble::after {
+    content: "";
+    position: absolute;
+    bottom: 100%; /* Position above the bubble */
+    left: 50%; /* Center it */
+    margin-left: -10px; /* Adjust for the width of the triangle */
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #E7B190 transparent; /* Triangle pointing down */
+}
+.p{
+    color: #ffffff;
+}
+

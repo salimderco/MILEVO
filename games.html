@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splash Shape</title>
+ 
+
+
+    <STyle>
+        @import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Poetsen+One&display=swap');
+       
+
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Poetsen One", sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background: url(./img/gbg.jpg) no-repeat center center/cover;
+            
+            
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background: transparent;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 999;
+    background-color: #F0BC9C;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    width: 100%;
+
+    max-width: 1600px;
+    
+}
+
+.navbar-logo {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar img {
+    cursor: pointer;
+    height: 10vh;
+    border-radius: 50%;
+    margin-right: 25px;
+    margin-left: 10px;
+    border: 3px solid;
+    border-color: #ffffff;
+    
+}
+
+.navbar-container .navbar-menu {
+    display: flex;
+    text-align: center;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.navbar-container .navbar-menu li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 3px 20px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    transition: all 0.7s ease;
+    white-space: nowrap;
+}
+
+.navbar-container .navbar-menu li a:hover,
+.navbar-container .navbar-menu li a.active {
+    color: #162530;
+    background: rgba(255, 255, 255, 0.8);
+    border: 2px solid #fff;
+}
+
+.navbar-toggle {
+    display: none;
+    background: transparent;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #000000;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Responsive Styles */
+@media (max-width: 880px) {
+    .navbar {
+        backdrop-filter: none;
+    }
+
+    .navbar-container .navbar-menu {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.7rem !important;
+        position: absolute;
+        height: 100vh;
+        width: 250px;
+        top: 0;
+        right: 0;
+        padding: 5rem 1.5rem;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(10px);
+    }
+
+    .navbar-container .navbar-menu.active {
+        display: flex;
+    }
+
+    .navbar-toggle {
+        display: block;
+        z-index: 999;
+    }
+
+    .navbar-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .navbar-toggle.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .navbar-toggle.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-container {
+        padding: 0 1rem;
+    }
+
+    .navbar-logo {
+        font-size: 1.7rem;
+    }
+
+    .navbar-container .navbar-menu li a {
+        font-size: 1.2rem;
+        padding: 3px 15px;
+    }
+}
+
+
+          .container{
+            display:inline-block;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 0 20px;
+            row-gap: 10px;
+            margin-top: 20px;
+
+          }
+
+          .container2{
+
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 70px;
+            row-gap: 10px;
+            margin-top: 20px;
+
+          }
+
+          .container3{
+
+          display:flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 70px;
+          row-gap: 10px;
+          margin-top: 20px;
+         }
+
+         .container4{
+            display:flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 70px;
+          row-gap: 10px;
+          margin-top: 20px;
+            
+
+         }
+
+
+          .rec{
+            display:flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 243px;
+            height: 184px;
+            background-color: #E2B49D7A;
+            border-radius: 16px;
+
+          }
+
+          .rec:hover{
+           background-color:#F0BC9C;
+            
+            cursor:pointer;
+               }
+
+          .recimage{
+            width: 213px;
+            height: 118px;
+            margin-top: 15px;
+            left: 15px;
+            border-radius: 16px;
+            background-color: #ffffff;
+          }
+          .recimage img {
+            width: 210px;
+            height: 115px;
+            border-radius: 16px;
+
+          }
+
+
+
+    </STyle>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="Milevo.html"><img src="img/milevo.png"  alt=""></a>
+        <div class="navbar-container">
+           
+            <a href="Milevo.html" class="navbar-logo">MILEVO</a>
+            <button class="navbar-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="navbar-menu">
+                <li><a href="#" >Home</a></li>
+                <li><a href="#" class="active">Games</a></li>
+                <li><a href="#">Sounds</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">About Us</a></li>
+                
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+          <div class="container2">
+        
+        <div class="rec" onclick="document.location='emoguesss.html'">
+            <div class="recimage"><img src="img/games/mw.png" alt=""></div>
+            <p>Matching Words</p>
+
+
+        </div>
+
+        <div class="rec" onclick="document.location='emoguesss.html'">
+            <div class="recimage"><img src="img/games/gv.png" alt=""></div>
+            <p>Guess The Sound</p>
+
+
+        </div>
+
+        <div class="rec" onclick="document.location='Sentences.html'">
+            <div class="recimage"><img src="img/games/bs.jpg" alt=""></div>
+            <p>Building Sentences</p>
+
+
+        </div>
+
+        <div class="rec" onclick="document.location='emoguesss.html'">
+            <div class="recimage"><img src="img/games/ge.jpg" alt=""></div>
+            <p>Guess The EMO</p>
+
+
+        </div>
+
+
+
+          </div>
+
+          <div class="container3">
+
+            <div class="rec" onclick="document.location='emoguesss.html'">
+                <div class="recimage"><img src="img/games/ms.png" alt=""></div>
+                <p>Matching Sounds</p>
+    
+    
+            </div>
+    
+            <div class="rec" onclick="document.location='emoguesss.html'">
+                <div class="recimage"><img src="img/games/ml.jpg" alt=""></div>
+                <p>Missing Letter</p>
+    
+    
+            </div>
+    
+            <div class="rec" onclick="document.location='colorreco.html'">
+                <div class="recimage"><img src="img/games/cr.jpg" alt=""></div>
+                <p>Colors Recognition</p>
+    
+    
+            </div>
+    
+            <div class="rec" onclick="document.location='colorreco.html'">
+                <div class="recimage"><img src="img/games/ooo.jpg" alt=""></div>
+                <p>Odd One Out</p>
+    
+    
+            </div>
+            
+          </div>
+
+          <div class="container4">
+            <div class="rec" onclick="document.location='emoguesss.html'">
+                <div class="recimage"><img src="img/games/mc.png" alt=""></div>
+                <p>Memory Cards</p>
+    
+    
+            </div>
+    
+            <div class="rec" onclick="document.location='matchopposites.html'">
+                <div class="recimage"><img src="img/games/mo.jpg" alt=""></div>
+                <p>Matching Opposites</p>
+    
+    
+            </div>
+
+
+          </div>
+
+
+
+
+    </div>
+    
+
+
+
+
+    
+    
+
+
+
+</body>
+
+<SCript>
+
+const navbarToggle = document.querySelector('.navbar-toggle');
+const navbarMenu = document.querySelector('.navbar-menu');
+
+navbarToggle.addEventListener('click', () => {
+    navbarToggle.classList.toggle('active');
+    navbarMenu.classList.toggle('active');
+});
+
+</SCript>
+</html>

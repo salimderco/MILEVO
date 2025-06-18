@@ -1,0 +1,70 @@
+html,body{
+    height: 100%;
+    width: 100%;
+
+}
+.navbar{
+  background-image: url("image/logo.png");
+  image-rendering: crisp-edges;
+  background-size: 50px;
+  background-position: 1.4%;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  box-shadow: 4px 5px 6px ;
+  color: rgb(0, 0, 0);
+
+  height: 10%;
+}
+.home{
+    position: absolute;
+    top: 2.8%;
+    left: 20%;
+    font-style: italic;
+    font-weight: 400;
+font-size: 14px;
+ 
+}
+.Parents{
+    position: absolute;
+    top: 2.8%;
+    left: 30%;
+    font-style: italic;
+    font-weight: 400;
+font-size: 14px;
+}
+.admins{
+    position: absolute;
+    top: 2.8%;
+    left: 40%;
+    font-style: italic;
+    font-weight: 400;
+font-size: 14px;
+}
+.language{
+    position: absolute;
+    top: 3.5%;
+    left: 50%;
+    width: 127px;
+    height: 35px;
+   
+    border-radius: 35px;
+    box-shadow: 4px 5px 6px ;
+text-align: center;
+text-decoration: none;
+font-style: italic;
+font-weight: 400;
+font-size: 14px;
+}
+.logo{
+    width: 20%;
+    position: absolute;
+    top: 0.15%;
+    left: 7%;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 28px;
+    }
+    a{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+    }

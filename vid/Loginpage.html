@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MILEVO</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+
+body{
+    background-image: url("child4.png");
+  background-position:top ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: slowZoom 20s infinite alternate ease-in-out;
+}
+.all{
+  background: rgba  (255 ,255 ,255,0.1);
+  backdrop-filter: blur(8px);  
+  -webkit-backdrop-filter: blur(8px);
+    width: 400px;
+    height: 550px;
+    padding: 20px;
+    animation: fadeSlide 1.2s ease forwards;
+box-shadow: 0px 4px 20px ;
+border-radius: 20px;
+border-color: black;
+
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50% ,-50%);}
+header{
+ position: absolute;
+top: 5%;
+left: 28%;
+
+}
+.name{
+   background: transparent;
+    padding: 10px;
+    border-radius: 10px;
+
+    box-shadow: 0px 4px 8px ;
+    
+   width: 87%;
+   font-size: 16px;
+  color: black;
+    outline: none;
+    position: absolute;
+    top: 32%;
+}
+.Email{
+    background: transparent;
+     padding: 10px;
+     border-radius: 10px;
+     box-shadow: 0px 4px 8px ;
+    width: 87%;
+    font-size: 16px;
+   color: black;
+     outline: none;
+     position: absolute;
+     top: 42%;
+ }
+ .password{
+    background: transparent;
+     padding: 10px;
+     border-radius: 10px;
+     box-shadow: 0px 4px 8px ;
+     
+    width: 87%;
+    font-size: 16px;
+   
+     position: absolute;
+     top: 52%;
+ }
+ .signin{
+    
+    background: transparent;
+     padding: 10px;
+     border-radius: 10px;
+     box-shadow: 0px 4px 8px ;
+
+    width: 15%;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+   color: rgb(0, 0, 0);
+     outline: none;
+     position: absolute;
+     top: 62%;
+left: 42%;
+    
+ }
+ a{
+    text-decoration: none;
+ }
+ 
+ h1{
+color: rgb(10, 6, 1);
+font-style: italic;
+
+
+ }
+ h3{
+    position: absolute;
+    top: 72%;
+    left: 28%;
+    font-style: italic;
+ }
+ .Login{
+   
+    background: transparent;
+     padding: 10px;
+     border-radius: 10px;
+     box-shadow: 0px 4px 8px ;
+    width: 15%;
+    font-size: 18px;
+    font-style: italic;
+    font-weight:bold;
+   color: rgb(0, 0, 0);
+     outline: none;
+position: absolute;
+top: 82%;
+left: 42%;
+
+}
+input{
+    font-weight: bold;
+
+}
+
+
+
+
+@keyframes fadeSlide {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -40%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+@keyframes slowZoom {
+  0% {
+    background-size: 100%;
+  }
+  100% {
+    background-size: 105%;
+  }
+}
+.signin:hover,
+.Login:hover {
+  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: 0.4s ease;
+}
+input:focus {
+  border: 2px solid #e7b190;
+  box-shadow: 0 0 8px #e7b190;
+  transition: 0.4s ease;
+}
+.name, .Email, .password, .signin, .Login, h1, h3 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1s forwards;
+}
+
+.name { animation-delay: 0.5s; }
+.Email { animation-delay: 0.7s; }
+.password { animation-delay: 0.9s; }
+.signin { animation-delay: 1.1s; }
+.Login { animation-delay: 1.3s; }
+h1 { animation-delay: 0.2s; }
+h3 { animation-delay: 1.5s; }
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+    </style>
+</head>
+
+<body>
+   
+    <div class="all">
+        <header>
+            <h1>
+                Creat an account
+            </h1>
+
+        </header>
+      
+            <form class="form">
+                
+                    <input type="text"  placeholder="FULLNAME" class="Full name">
+                
+                <br>
+                    <input type="email" placeholder="EMAIL" class="Email">
+                
+                <br>
+               
+                    <input type="password" placeholder="PASSWORD" class="password">
+                
+                <br>
+                <a href="C:\Users\PC\Desktop\multproj\index.html" class="signin">SIGNUP</a>
+
+                <h3>
+                    Already with an Account
+                </h3>
+                <br>
+                <a  class="Login" href="C:\Users\salim\Desktop\multproj\signinpage.html">LOG IN</a>
+
+            </form>
+  
+    </div>
+    <canvas id="particles"></canvas>
+    <script>
+        const canvas = document.getElementById("particles");
+        const ctx = canvas.getContext("2d");
+        
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        
+        let particlesArray = [];
+        
+        class Particle {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 3 + 1;
+                this.speedX = Math.random() * 1 - 0.5;
+                this.speedY = Math.random() * 1 - 0.5;
+            }
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+                if (this.size > 0.2) this.size -= 0.02;
+            }
+            draw() {
+                ctx.fillStyle = "rgba(255, 255, 255, 0.7)";
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+        
+        function init() {
+            particlesArray = [];
+            for (let i = 0; i < 100; i++) {
+                particlesArray.push(new Particle());
+            }
+        }
+        
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particlesArray.forEach(particle => {
+                particle.update();
+                particle.draw();
+            });
+            requestAnimationFrame(animate);
+        }
+        
+        window.addEventListener("resize", function() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            init();
+        });
+        
+        init();
+        animate();
+        </script>
+        
+</body>
+
+</html>
