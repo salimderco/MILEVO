@@ -1,0 +1,20 @@
+# Ignore videos
+*.mp4
+
+# Ignore large images
+*.jpg
+*.jpeg
+*.png
+
+# Ignore zip or archives
+*.zip
+*.rar
+
+# Ignore Photoshop or design files
+*.psd
+*.ai
+
+# Node or web development temp
+node_modules/
+dist/
+build/
