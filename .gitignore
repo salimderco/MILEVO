@@ -1,25 +1,8 @@
-# Ignore videos
+# Ignore media
 *.mp4
-
-# Ignore large images
+*.zip
 *.jpg
-*.jpeg
 *.png
-
-# Ignore zip or archives
-*.zip
 *.rar
-
-# Ignore Photoshop or design files
+*.exe
 *.psd
-*.ai
-
-# Node or web development temp
-node_modules/
-dist/
-build/
-
-*.zip
-*.mp4
-*.psd
-*.ai
