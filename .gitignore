@@ -18,3 +18,8 @@
 node_modules/
 dist/
 build/
+
+*.zip
+*.mp4
+*.psd
+*.ai
