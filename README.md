@@ -49,10 +49,16 @@ Designed with accessibility in mind
 Can be extended easily for other use cases
 
 🙋‍♂️ Author
-Salim Derradj
-Computer Science Engineering Student – 2nd Year
-Passionate about AI, Web Development, and Educational Technologies
-📫 Telegram: @salimderco
+
+🧠 About Me
+
+I'm a 2nd-year Computer Engineering student passionate about software development and artificial intelligence.
+Feel free to explore, use, or suggest improvements!
+
+📫 Connect with Me
+
+📘 Facebook: https://www.facebook.com/profile.php?id=61558180357718
+📸 Instagram: https://www.instagram.com/saldr34/
 
 📝 License
 This project is open-source and available under the MIT License.
